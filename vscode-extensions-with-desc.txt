@@ -1,0 +1,69 @@
+a-bentofreire.vsctoix	2024-09-12	extract,join,split,encode,mix,change case and slash,del dup,regex, and more
+adamhartford.vscode-base64	2018-10-19	Base64 encode/decode the current selections.
+AdamRybak.graycat-sql-formatter	2020-08-10	A VSCode formatter extension for SQL scripts.
+AndrewMitchell.devcontainer-template-manager	2024-08-02	Easily manage, reuse, and save DevContainer templates for consistent development environments across projects.
+antfu.iconify	2024-08-12	Intelligent Iconify previewing and searching for VS Code
+az-resource-explorer-vscode.azure-resource-explorer-for-vscode	2024-09-16	Observe/modify _all_ your Azure resources in VsCode
+christian-kohler.path-intellisense	2024-06-02	Visual Studio Code plugin that autocompletes filenames
+cmiz.tsv-paste-json	2022-12-27	Convert the TSV text in the clipboard to JSON and paste it into the editor.
+Codeium.codeium	2024-09-13	The modern coding superpower: free AI code acceleration plugin for your favorite languages. Type less. Code more. Ship faster.
+CoenraadS.disableligatures	2020-10-02	Disable ligatures at the cursor position, or disable all ligatures on the line
+cweijan.dbclient-jdbc	2024-09-04	JDBC Adapter For Database Client
+cweijan.vscode-myssql-client2	2024-09-16	Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch.
+dagra.jsonschemautils	2020-08-14	Utilities for validating and mocking JSON schema.
+dakara.transformer	2022-04-16	Filter, Sort, Unique, Reverse, Align, CSV, Line Selection and more text Transformations
+eamodio.gitlens	2024-09-17	Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+esbenp.prettier-vscode	2024-08-14	Code formatter using prettier
+formulahendry.auto-rename-tag	2022-02-08	Auto rename paired HTML/XML tag
+GitHub.github-vscode-theme	2023-03-28	GitHub theme for VS Code
+GitHub.remotehub	2024-09-05	Remotely browse and edit any GitHub repository
+Gruntfuggly.todo-tree	2023-04-12	Show TODO, FIXME, etc. comment tags in a tree view
+hilleer.yaml-plus-json	2023-10-06	Easily convert yaml to json and json to yaml
+i574n.spiral-lang-vscode-i574n	2024-08-08	VS Code editor support plugin + the Spiral language compiler.
+IBM.output-colorizer	2017-07-05	Syntax highlighting for log files
+JannisX11.batch-rename-extension	2022-11-09	Batch rename files in the explorer inside a text editor
+johnpapa.vscode-peacock	2023-06-16	Subtly change the workspace color of your workspace. Ideal when you have multiple VS Code instances and you want to quickly identify which is which.
+jrebocho.vscode-random	2024-08-16	Generates random data directly into VS Code
+liximomo.remotefs	2019-05-05	Working with any file in everywhere like they are in local with vscdoe.
+luisfontes19.vscode-swissknife	2023-05-14	The developers swissknife. Do conversions and generations right out of vs code. Extendable with user scripts
+mechatroner.rainbow-csv	2024-05-25	Highlight CSV and TSV files, Run SQL-like queries
+meganrogge.template-string-converter	2023-04-13	Converts a string to a template string when ${ is typed
+ms-azuretools.vscode-bicep	2024-09-17	Bicep language support for Visual Studio Code
+ms-azuretools.vscode-docker	2024-08-13	Makes it easy to create, manage, and debug containerized applications.
+ms-toolsai.jupyter	2024-09-13	Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
+ms-toolsai.jupyter-keymap	2023-06-05	Jupyter keymaps for notebooks
+ms-toolsai.jupyter-renderers	2024-07-30	Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs)
+ms-toolsai.vscode-jupyter-cell-tags	2024-04-03	Jupyter Cell Tags support for VS Code
+ms-toolsai.vscode-jupyter-slideshow	2024-04-03	Jupyter Slide Show support for VS Code
+ms-vscode.azure-repos	2024-09-05	Remotely browse and edit any Azure Repos
+ms-vscode.remote-explorer	2024-08-13	View remote machines for SSH and Tunnels.
+ms-vscode-remote.remote-containers	2024-09-10	Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.
+ms-vscode-remote.remote-ssh	2024-09-16	Open any folder on a remote machine using SSH and take advantage of VS Code's full feature set.
+ms-vscode-remote.remote-ssh-edit	2023-05-10	Edit SSH configuration files
+ms-vscode-remote.remote-wsl	2024-09-11	Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set.
+ms-vscode.remote-repositories	2024-09-05	Remotely browse and edit git repositories
+ms-vscode.remote-server	2024-09-16	Connect to a remote machine through a Tunnel
+ms-vscode-remote.vscode-remote-extensionpack	2023-11-29	An extension pack that lets you open any folder in a container, on a remote machine, or in WSL and take advantage of VS Code's full feature set.
+mtxr.sqltools	2024-04-16	Connecting users to many of the most commonly used databases. Welcome to database management done right.
+mtxr.sqltools-driver-mssql	2024-04-16	SQLTools Microsoft SQL Server/Azure
+nickdemayo.vscode-json-editor	2021-02-22	Generate a tree view editor of the active JSON document
+PascalReitermann93.vscode-yaml-sort	2024-04-28	This VS Code extension exposes the possibility to sort, format and validate yaml files.
+qwtel.sqlite-viewer	2024-09-09	SQLite Viewer for VSCode
+rangav.vscode-thunder-client	2024-09-16	Lightweight Rest API Client for VS Code
+redhat.vscode-commons	2021-04-27	Base utilities for Red Hat extensions. Notably controls telemetry settings.
+redhat.vscode-xml	2024-08-25	XML Language Support by Red Hat
+redhat.vscode-yaml	2024-06-07	YAML Language Support by Red Hat, with built-in Kubernetes syntax support
+richie5um2.vscode-sort-json	2021-03-20	Sorts the keys within JSON objects
+rlivings39.fzf-quick-open	2023-04-13	Fuzzy search files/folders and ripgrep results with fzf inside VSCode
+rpinski.shebang-snippets	2024-09-11	Snippets for shebang lines for different types of scripts.
+Rubymaniac.vscode-direnv	2016-08-29	Automatically detect and load .envrc when opening VS Code
+TalhaBalaj.actual-font-changer	2024-01-29	Quickly changes fonts by selecting from a installed fonts
+tsurdilovic.cloudevents-schema-vscode	2020-02-26	Provides JSON validation for CloudEvents format.
+Tyriar.sort-lines	2023-10-02	Sorts lines of text
+usernamehw.errorlens	2024-06-22	Improve highlighting of errors, warnings and other language diagnostics.
+vikyd.vscode-fold-level	2021-05-27	Additional Fold Commands by One Step Shortcut, Like PhpStorm
+VisualStudioExptTeam.intellicode-api-usage-examples	2023-08-26	See relevant code examples from GitHub for over 100K different APIs right in your editor.
+VisualStudioExptTeam.vscodeintellicode	2024-03-15	AI-assisted development
+vscodevim.vim	2024-09-07	Vim emulation for Visual Studio Code
+wayou.vscode-todo-highlight	2021-10-29	highlight TODOs, FIXMEs, and any keywords, annotations...
+yandeu.five-server	2024-01-02	A better Live Server with instant updates, highlights and some PHP support.

@@ -1,0 +1,8 @@
+bierner.markdown-checkbox                          2022-11-03       808802 Adds checkbox support to the built-in markdown preview
+bierner.markdown-mermaid                           2024-09-16      1956753 Adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
+bpruitt-goddard.mermaid-markdown-syntax-highlighting 2024-05-29       400320 Markdown syntax support for the Mermaid charting language
+davidanson.vscode-markdownlint                     2024-09-12      7533835 Markdown linting and style checking for Visual Studio Code
+shd101wyy.markdown-preview-enhanced                2024-09-07      6037283 Markdown Preview Enhanced ported to vscode
+yzhang.markdown-all-in-one                         2024-01-15      9333872 All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
+firsttris.vscode-jest-runner                       2024-03-28      1433832 Simple way to run or debug a single (or multiple) tests from context-menu
+tht13.rst-vscode                                   2018-10-17       120138 Provides ability to preview RST documents.

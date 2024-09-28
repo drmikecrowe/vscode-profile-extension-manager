@@ -1,0 +1,1 @@
+thenuprojectcontributors.vscode-nushell-lang       2024-03-06        24843 nushell language for vscode

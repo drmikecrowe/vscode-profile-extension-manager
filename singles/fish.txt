@@ -1,0 +1,2 @@
+lunaryorn.fish-ide                                 2018-08-23        21060 IDE features for fish shell scripts
+skyapps.fish-vscode                                2018-10-22        92931 Fish syntax highlighting

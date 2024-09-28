@@ -1,0 +1,4 @@
+ironmansoftware.powershellprotools	2024-07-30	Powerful extensions for PowerShell development.
+ms-vscode.PowerShell	2024-05-14	Develop PowerShell modules, commands and scripts in Visual Studio Code!
+ms-dotnettools.dotnet-interactive-vscode	2024-09-12	Polyglot Notebooks for VS Code. Use multiple languages in one notebook with full language server support for each language and share variables between them.
+ms-dotnettools.vscode-dotnet-runtime	2024-08-20	This extension installs and manages different versions of the .NET SDK and Runtime.

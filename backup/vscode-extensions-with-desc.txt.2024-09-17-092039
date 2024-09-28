@@ -1,0 +1,67 @@
+a-bentofreire.vsctoix                              2024-09-12         2699 extract,join,split,encode,mix,change case and slash,del dup,regex, and more
+adamhartford.vscode-base64                         2018-10-19       230721 Base64 encode/decode the current selections.
+andrewmitchell.devcontainer-template-manager       2024-08-02           45 Easily manage, reuse, and save DevContainer templates for consistent development environments across projects.
+antfu.iconify                                      2024-08-12       364578 Intelligent Iconify previewing and searching for VS Code
+ban.spellright                                     2024-08-02       455662 Multilingual, Offline and Lightweight Spellchecker
+christian-kohler.path-intellisense                 2024-06-02     13941134 Visual Studio Code plugin that autocompletes filenames
+cmiz.tsv-paste-json                                2022-12-27         1164 Convert the TSV text in the clipboard to JSON and paste it into the editor.
+codeium.codeium                                    2024-09-13      1544933 The modern coding superpower: free AI code acceleration plugin for your favorite languages. Type less. Code more. Ship faster.
+coenraads.disableligatures                         2020-10-02        30254 Disable ligatures at the cursor position, or disable all ligatures on the line
+dagra.jsonschemautils                              2020-08-14         4455 Utilities for validating and mocking JSON schema.
+dakara.transformer                                 2022-04-16       100732 Filter, Sort, Unique, Reverse, Align, CSV, Line Selection and more text Transformations
+davidmcnamee.rope-python                           2024-07-29           90 Rope refactoring for python code
+douglaszaltron.nunjucks-vscode-extensionpack       2018-11-26        25288 Formatting, Syntax Highlighting, Hover, and Snippets for Nunjucks
+eamodio.gitlens                                    2024-09-17     35089159 Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+eliostruyf.vscode-front-matter-beta                2024-09-16         1777 BETA Version of Front Matter. Front Matter is a CMS that runs within Visual Studio Code. It gives you the power and control of a full-blown CMS while also providing you the flexibility and speed of the static site generator of your choice like: Hugo, Jekyll, Docusaurus, NextJs, Gatsby, and many more
+esbenp.prettier-vscode                             2024-08-14     48880520 Code formatter using prettier
+firsttris.vscode-jest-runner                       2024-03-28      1433832 Simple way to run or debug a single (or multiple) tests from context-menu
+formulahendry.auto-rename-tag                      2022-02-08     19426427 Auto rename paired HTML/XML tag
+github.github-vscode-theme                         2023-03-28     14273214 GitHub theme for VS Code
+gitlab.gitlab-workflow                             2024-09-17      1808506 Official GitLab-maintained extension for Visual Studio Code.
+gruntfuggly.todo-tree                              2023-04-12      4979192 Show TODO, FIXME, etc. comment tags in a tree view
+hbenl.vscode-test-explorer                         2021-08-29      3721627 Run your tests in the Sidebar of Visual Studio Code
+ibm.output-colorizer                               2017-07-05      1148635 Syntax highlighting for log files
+istarwyh.writinghelper                             2021-11-07         8558 get all the benefits of Grammarly & Linggle
+jannisx11.batch-rename-extension                   2022-11-09       526272 Batch rename files in the explorer inside a text editor
+janschulte.better-seo                              2021-06-05         2523 Avoid common SEO traps while you write your Blogpost
+johnpapa.vscode-peacock                            2023-06-16      3229478 Subtly change the workspace color of your workspace. Ideal when you have multiple VS Code instances and you want to quickly identify which is which.
+jrebocho.vscode-random                             2024-08-16        94035 Generates random data directly into VS Code
+jsynowiec.vscode-insertdatestring                  2022-02-10       114373 Insert the current date and time according to configured format.
+luisfontes19.vscode-swissknife                     2023-05-14        34917 The developers swissknife. Do conversions and generations right out of vs code. Extendable with user scripts
+matangover.mypy                                    2024-08-24       233848 Type checking for Python using mypy
+meganrogge.template-string-converter               2023-04-13       475144 Converts a string to a template string when ${ is typed
+ms-dotnettools.vscode-dotnet-runtime               2024-08-20     14895972 This extension installs and manages different versions of the .NET SDK and Runtime.
+ms-python.black-formatter                          2024-07-25      3552314 Formatting support for Python files using the Black formatter.
+ms-python.debugpy                                  2024-08-29     45532943 Python Debugger extension using debugpy.
+ms-python.isort                                    2024-08-19     22934645 Import organization support for Python files using isort.
+ms-python.python                                   2024-09-16    136622708 Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more.
+ms-python.vscode-pylance                           2024-09-12    108854605 A performant, feature-rich language server for Python in VS Code
+ms-toolsai.jupyter                                 2024-09-13     82336246 Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
+ms-toolsai.jupyter-keymap                          2023-06-05     63841563 Jupyter keymaps for notebooks
+ms-toolsai.jupyter-renderers                       2024-07-30     62636760 Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs)
+ms-toolsai.vscode-jupyter-cell-tags                2024-04-03     44205444 Jupyter Cell Tags support for VS Code
+ms-toolsai.vscode-jupyter-slideshow                2024-04-03     44134941 Jupyter Slide Show support for VS Code
+ms-vscode.test-adapter-converter                   2024-01-11      3325849 Converter extension from the Test Adapter UI to native VS Code testing
+ms-vscode.vscode-speech                            2024-06-01       298275 A VS Code extension to bring speech-to-text and other voice capabilities to VS Code.
+negokaz.live-server-preview                        2019-01-20      1198628 Preview your HTML file with localhost server live-reloading enabled
+nickdemayo.vscode-json-editor                      2021-02-22       275960 Generate a tree view editor of the active JSON document
+nor-s.front-matter-gen                             2022-12-26          272 Generator front-matter from template
+orta.vscode-jest                                   2024-08-13      2496980 Use Facebook's Jest With Pleasure.
+rangav.vscode-thunder-client                       2024-09-16      4418636 Lightweight Rest API Client for VS Code
+redhat.vscode-commons                              2021-04-27      2214931 Base utilities for Red Hat extensions. Notably controls telemetry settings.
+redhat.vscode-xml                                  2024-08-25      6691345 XML Language Support by Red Hat
+richie5um2.vscode-sort-json                        2021-03-20       553524 Sorts the keys within JSON objects
+rlivings39.fzf-quick-open                          2023-04-13        17673 Fuzzy search files/folders and ripgrep results with fzf inside VSCode
+rpinski.shebang-snippets                           2024-09-11       175210 Snippets for shebang lines for different types of scripts.
+rubymaniac.vscode-direnv                           2016-08-29        43744 Automatically detect and load .envrc when opening VS Code
+talhabalaj.actual-font-changer                     2024-01-29        12794 Quickly changes fonts by selecting from a installed fonts
+tht13.rst-vscode                                   2018-10-17       120138 Provides ability to preview RST documents.
+tsurdilovic.cloudevents-schema-vscode              2020-02-26          788 Provides JSON validation for CloudEvents format.
+tyriar.sort-lines                                  2023-10-02       905155 Sorts lines of text
+usernamehw.errorlens                               2024-06-22      4829719 Improve highlighting of errors, warnings and other language diagnostics.
+vikyd.vscode-fold-level                            2021-05-27        14590 Additional Fold Commands by One Step Shortcut, Like PhpStorm
+visualstudioexptteam.intellicode-api-usage-examples 2023-08-26     30441747 See relevant code examples from GitHub for over 100K different APIs right in your editor.
+visualstudioexptteam.vscodeintellicode             2024-03-15     46473656 AI-assisted development
+vscodevim.vim                                      2024-09-07      6765612 Vim emulation for Visual Studio Code
+wayou.vscode-todo-highlight                        2021-10-29      4834423 highlight TODOs, FIXMEs, and any keywords, annotations...
+yandeu.five-server                                 2024-01-02      1308898 A better Live Server with instant updates, highlights and some PHP support.

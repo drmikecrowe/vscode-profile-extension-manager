@@ -1,0 +1,5 @@
+cmiz.tsv-paste-json                                2022-12-27         1164 Convert the TSV text in the clipboard to JSON and paste it into the editor.
+dagra.jsonschemautils                              2020-08-14         4455 Utilities for validating and mocking JSON schema.
+nickdemayo.vscode-json-editor                      2021-02-22       275960 Generate a tree view editor of the active JSON document
+richie5um2.vscode-sort-json                        2021-03-20       553524 Sorts the keys within JSON objects
+tsurdilovic.cloudevents-schema-vscode              2020-02-26          788 Provides JSON validation for CloudEvents format.
