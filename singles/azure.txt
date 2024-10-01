@@ -1,5 +1,0 @@
-az-resource-explorer-vscode.azure-resource-explorer-for-vscode 2024-09-16         3699 Observe/modify _all_ your Azure resources in VsCode
-ms-azuretools.vscode-bicep                         2024-07-22       963588 Bicep language support for Visual Studio Code
-ms-azuretools.vscode-docker                        2024-08-13     37305225 Makes it easy to create, manage, and debug containerized applications.
-ms-vscode.azure-repos                              2024-09-05      2672838 Remotely browse and edit any Azure Repos
-mtxr.sqltools-driver-mssql                         2024-04-16       279962 SQLTools Microsoft SQL Server/Azure

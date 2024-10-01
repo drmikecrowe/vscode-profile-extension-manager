@@ -1,7 +1,0 @@
-davidmcnamee.rope-python                           2024-07-29           90 Rope refactoring for python code
-matangover.mypy                                    2024-08-24       233848 Type checking for Python using mypy
-ms-python.black-formatter                          2024-07-25      3552314 Formatting support for Python files using the Black formatter.
-ms-python.debugpy                                  2024-08-29     45532943 Python Debugger extension using debugpy.
-ms-python.isort                                    2024-08-19     22934645 Import organization support for Python files using isort.
-ms-python.python                                   2024-09-16    136622708 Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more.
-ms-python.vscode-pylance                           2024-09-12    108854605 A performant, feature-rich language server for Python in VS Code

@@ -1,5 +1,0 @@
-ban.spellright                                     2024-08-02       455662 Multilingual, Offline and Lightweight Spellchecker
-eliostruyf.vscode-front-matter-beta                2024-09-16         1777 BETA Version of Front Matter. Front Matter is a CMS that runs within Visual Studio Code. It gives you the power and control of a full-blown CMS while also providing you the flexibility and speed of the static site generator of your choice like: Hugo, Jekyll, Docusaurus, NextJs, Gatsby, and many more
-istarwyh.writinghelper                             2021-11-07         8558 get all the benefits of Grammarly & Linggle
-janschulte.better-seo                              2021-06-05         2523 Avoid common SEO traps while you write your Blogpost
-nor-s.front-matter-gen                             2022-12-26          272 Generator front-matter from template

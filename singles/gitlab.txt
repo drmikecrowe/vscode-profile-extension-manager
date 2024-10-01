@@ -1,1 +1,0 @@
-gitlab.gitlab-workflow                             2024-09-17      1808506 Official GitLab-maintained extension for Visual Studio Code.

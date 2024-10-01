@@ -1,6 +1,0 @@
-adamrybak.graycat-sql-formatter                    2020-08-10        11763 A VSCode formatter extension for SQL scripts.
-cweijan.vscode-myssql-client2                      2024-09-16        82524 Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch.
-mechatroner.rainbow-csv                            2024-05-25      8792148 Highlight CSV and TSV files, Run SQL-like queries
-mtxr.sqltools                                      2024-04-16      4385876 Connecting users to many of the most commonly used databases. Welcome to database management done right.
-qwtel.sqlite-viewer                                2024-09-09      1289982 SQLite Viewer for VSCode
-cweijan.dbclient-jdbc                              2024-09-04      1291443 JDBC Adapter For Database Client

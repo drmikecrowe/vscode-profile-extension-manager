@@ -1,5 +1,0 @@
-ms-toolsai.jupyter                                 2024-09-13     82336246 Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
-ms-toolsai.jupyter-keymap                          2023-06-05     63841563 Jupyter keymaps for notebooks
-ms-toolsai.jupyter-renderers                       2024-07-30     62636760 Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs)
-ms-toolsai.vscode-jupyter-cell-tags                2024-04-03     44205444 Jupyter Cell Tags support for VS Code
-ms-toolsai.vscode-jupyter-slideshow                2024-04-03     44134941 Jupyter Slide Show support for VS Code

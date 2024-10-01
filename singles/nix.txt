@@ -1,4 +1,0 @@
-arrterian.nix-env-selector                         2024-02-01        49552 Allows switch environment for Visual Studio Code and extensions based on Nix config file.
-jamesottaway.nix-develop                           2021-02-10         3849 Develop using Nix in VSCode
-jnoortheen.nix-ide                                 2024-09-13        66765 Nix language support - syntax highlighting, formatting, and error reporting.
-kamadorueda.alejandra                              2022-02-13         3691 The Uncompromising Nix Code Formatter
