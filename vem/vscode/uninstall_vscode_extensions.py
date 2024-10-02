@@ -15,8 +15,8 @@ def uninstall_vscode_extension(profile: str, extension_id: str) -> ResultWithErr
         ResultWithErr[None]: A result object indicating whether the installation was successful or not.
     """
     try:
-        subprocess.run(
-            ["code", "--profile", profile, "--uninstall-extensions", extension_id],
+        results = subprocess.run(
+            ["code", "--profile", profile, "--uninstall-extension", extension_id],
             capture_output=True,
             text=True,
             check=True,

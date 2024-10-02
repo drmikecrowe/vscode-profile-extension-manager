@@ -16,7 +16,7 @@ def install_vscode_extension(profile: str, extension_id: str) -> ResultWithErr[N
     """
     try:
         subprocess.run(
-            ["code", "--profile", profile, "--install-extensions", extension_id],
+            ["code", "--profile", profile, "--install-extension", extension_id],
             capture_output=True,
             text=True,
             check=True,
@@ -24,11 +24,13 @@ def install_vscode_extension(profile: str, extension_id: str) -> ResultWithErr[N
         return OK(None)
     except subprocess.CalledProcessError as e:
         return ERR(
-            Exception(f"Failed to install extensions for profile {profile}: {e}")
+            Exception(
+                f"Failed to install extension {extension_id} for profile {profile}: {e}"
+            )
         )
     except Exception as e:
         return ERR(
             Exception(
-                f"Unexpected error while installing extensions for profile {profile}: {e}"
+                f"Unexpected error while installing extension {extension_id} for profile {profile}: {e}"
             )
         )
