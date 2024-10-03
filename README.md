@@ -14,15 +14,16 @@ VS Code Extension Manager (VEM) is a powerful command-line tool designed to help
 
 ### Dumping Extensions
 
-[![Dumping Extensions](assets/VPEM-dump.png)](assets/https://github.com/drmikecrowe/vscode-profile-extension-manager/raw/refs/heads/main/assets/VPEM-dump.webm)
+[![Dumping Extensions](assets/VPEM-dump.png)](https://youtu.be/zaX0iI0jluc)
 
 ### Catorizing Extensions
 
-[![Catorizing Extensions](assets/VPEM-categorize.png)](assets/https://github.com/drmikecrowe/vscode-profile-extension-manager/raw/refs/heads/main/assets/VPEM-catorize.webm)
+[![Catorizing Extensions](assets/VPEM-categorize.png)](https://youtu.be/lzo96n4xvy8)
 
 ### Applying Extensions to Profile
 
-[![Applying Extensions to Profile](assets/VPEM-apply.png)](assets/https://github.com/drmikecrowe/vscode-profile-extension-manager/raw/refs/heads/main/assets/VPEM-apply.webm)
+[![Applying Extensions to Profile]([assets/VPEM-apply.png)](https://youtu.be/Ruytqu4YhcM)
+
 
 ---
 
