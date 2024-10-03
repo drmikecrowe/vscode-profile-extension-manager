@@ -18,11 +18,11 @@ Demonstration (Youtube)
 
 [![Dumping Extensions](https://img.youtube.com/vi/zaX0iI0jluc/0.jpg)](https://youtu.be/zaX0iI0jluc)
 
-### Catorizing Extensions
+### Categorizing Extensions
 
 Demonstration (Youtube)
 
-[![Catorizing Extensions](https://img.youtube.com/vi/lzo96n4xvy8/0.jpg)](https://youtu.be/lzo96n4xvy8)
+[![Categorizing Extensions](https://img.youtube.com/vi/lzo96n4xvy8/0.jpg)](https://youtu.be/lzo96n4xvy8)
 
 ### Applying Extensions to Profile
 
