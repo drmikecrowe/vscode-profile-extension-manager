@@ -19,7 +19,7 @@ def apply_groups(profile: str):
     if err:
         console.print(f"Error: {err}")
         return
-    assert current_extensions
+    assert current_extensions is not None
 
     # Load all extension details
     all_extensions = load_all_extension_details()

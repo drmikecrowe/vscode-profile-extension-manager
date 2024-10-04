@@ -10,7 +10,7 @@ This project has been developed strictly on Linux, though it should work everywh
 
 I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
 
-I realized that multiple profiles might make more sense that tons of extensions in a single profile.  However, it's also really easy to experiment with extensions and leave unused ones polluting the profile.  This tool helps me keep things organized.
+I realized that multiple profiles might make more sense than tons of extensions in a single profile.  However, it's also really easy to experiment with extensions and leave unused ones polluting the profile.  This tool helps me keep things organized.
 
 For example, here's how to apply a group of extensions to a profile:
 

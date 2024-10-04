@@ -21,7 +21,7 @@ def list_installed_vscode_extensions(profile: str) -> ResultWithErr[List[str]]:
             text=True,
             check=True,
         )
-        extensions = sorted(result.stdout.strip().split("\n"))
+        extensions = [x for x in sorted(result.stdout.strip().split("\n")) if x]
         return OK(extensions)
     except subprocess.CalledProcessError as e:
         return ERR(Exception(f"Failed to get extensions for profile {profile}: {e}"))
