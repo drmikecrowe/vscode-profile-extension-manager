@@ -46,7 +46,7 @@ def filter_extensions(
     todo: List[str], extensions_data: Dict[str, VscodeExtensionDetails]
 ) -> Tuple[List[str], SearchCondition]:
     done = len(todo) == 0
-    filtered_extensions = {}
+    filtered_extensions = []
     sc = SearchCondition.QUIT
     if not done:
         console.print(
@@ -72,16 +72,16 @@ Other shortcuts:
 
         todo_data = {ext_id: extensions_data[ext_id] for ext_id in todo}
 
-        filtered_extensions = {
-            ext_id: ext_info
-            for ext_id, ext_info in todo_data.items()
-            if re.search(search_string, ext_id, re.IGNORECASE)
-            or re.search(search_string, ext_info.displayName, re.IGNORECASE)
-            or re.search(search_string, ext_info.shortDescription, re.IGNORECASE)
-        }
+        for ext_id, ext_info in todo_data.items():
+            if (
+                re.search(search_string, ext_id, re.IGNORECASE)
+                or re.search(search_string, ext_info.displayName, re.IGNORECASE)
+                or re.search(search_string, ext_info.shortDescription, re.IGNORECASE)
+            ):
+                filtered_extensions.append(ext_id)
         done = len(filtered_extensions) > 0
 
-    return list(filtered_extensions.keys()), sc
+    return filtered_extensions, sc
 
 
 def categorize_extensions(uncategorized_only=True):

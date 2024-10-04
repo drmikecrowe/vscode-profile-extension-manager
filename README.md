@@ -1,45 +1,43 @@
-# VS Code Extension Manager (VEM)
+# VS Code Profile Extension Manager (VPEM)
 
-VS Code Extension Manager (VEM) is a powerful command-line tool designed to help you manage your Visual Studio Code extensions across different profiles. It allows you to dump, categorize, and apply extensions with ease, streamlining your VS Code setup process.
+VS Code Profile Extension Manager (VPEM) is a powerful command-line tool designed to help you manage your Visual Studio Code extensions across different profiles. It allows you to dump, categorize, and apply extensions with ease, streamlining your VS Code setup process.
 
-## Features
+## Status
 
-- Extract extensions from VS Code profiles
-- Categorize extensions into groups
-- Apply categorized extensions to specific profiles
-- Support for multiple profiles
-- Easy-to-use command-line interface
+This project has been developed strictly on Linux, though it should work everywhere.  If you find an issue, please report it in the [GitHub issue tracker](https://github.com/drmikecrowe/vscode-profile-extension-manager/issues).
 
---- 
+## Why?
 
-### Dumping Extensions
+I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
 
-Demonstration (Youtube)
+I realized that multiple profiles might make more sense that tons of extensions in a single profile.  However, it's also really easy to experiment with extensions and leave unused ones polluting the profile.  This tool helps me keep things organized.
 
-[![Dumping Extensions](https://img.youtube.com/vi/zaX0iI0jluc/0.jpg)](https://youtu.be/zaX0iI0jluc)
+For example, here's how to apply a group of extensions to a profile:
 
-### Categorizing Extensions
+![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply-example.png)
 
-Demonstration (Youtube)
+## Process
 
-[![Categorizing Extensions](https://img.youtube.com/vi/lzo96n4xvy8/0.jpg)](https://youtu.be/lzo96n4xvy8)
+- First, dump your extensions for all your profiles
 
-### Applying Extensions to Profile
+![Dump Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-dump.gif)
 
-Demonstration (Youtube)
+- Next, categorizing extensions by searching for common strings and assign to categories
 
-[![Applying Extensions to Profile]([https://img.youtube.com/vi/Ruytqu4YhcM/0.jpg)](https://youtu.be/Ruytqu4YhcM)
+![Categorize Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-categorize.gif)
 
----
+- Finally, apply extensions to a profile
+
+![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply.gif)
 
 ## Installation
 
-To install VEM, you can use pip:
+To install VPEM, you can use pip:
 
 ```sh
-git clone TODO
+git clone https://github.com/drmikecrowe/vscode-profile-extension-manager
 poetry install
-TODO
+poetry run vpem.py --help
 ```
 
 ## Usage
@@ -49,26 +47,24 @@ Here are some basic usage examples:
 - Dump extensions from a profile:
 
 ```sh
-   vem dump --profile "Default"
+   poetry run vpem.py dump --profile "Default"
 ```
 
 - Apply extensions to a profile:
 
 ```sh
-   vem apply --profile "Work" --category "Python Development"
+   poetry run vpem.py apply --profile "Work" --category "Python Development"
 ```
 
 - List all categories:
 
-```md
-   vem list-categories
+```sh
+   poetry run vpem.py list-categories
 ```
-
-For more detailed usage instructions, please refer to the [documentation](link-to-documentation).
 
 ## Contributing
 
-We welcome contributions to VEM! If you'd like to contribute, please follow these steps:
+We welcome contributions to VPEM! If you'd like to contribute, please follow these steps:
 
 1. Fork the repository
 2. Create a new branch for your feature or bug fix
@@ -80,12 +76,8 @@ Please make sure to update tests as appropriate and adhere to the project's codi
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on the [GitHub issue tracker](link-to-issues).
-
-## Acknowledgements
-
-We'd like to thank all the contributors who have helped make VEM better!
+If you encounter any issues or have questions, please file an issue on the [GitHub issue tracker](https://github.com/drmikecrowe/vscode-profile-extension-manager/issues).

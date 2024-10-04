@@ -1,5 +1,6 @@
 import inquirer
 from rich.console import Console
+from rich.progress import Progress
 
 from .load_extension_groups import load_extension_groups
 from .create_extensions_table import create_extensions_table
@@ -29,7 +30,7 @@ def apply_groups(profile: str):
             "You have added new extensions since last time you ran this script."
         )
         console.print(
-            "Please run 'vem dump' to update the list of installed extensions."
+            "Please run 'vpem dump' to update the list of installed extensions."
         )
         return
 
@@ -64,8 +65,13 @@ def apply_groups(profile: str):
             choices=extensions_to_remove,
         )
         if to_remove:
-            for ext in extensions_to_remove:
-                uninstall_vscode_extension(profile, ext)
+            with Progress() as progress:
+                task = progress.add_task(
+                    "[red]Removing extensions...", total=len(extensions_to_remove)
+                )
+                for ext in extensions_to_remove:
+                    uninstall_vscode_extension(profile, ext)
+                    progress.update(task, advance=1)
             actions += 1
             console.print(
                 f"Removed {len(extensions_to_remove)} extensions in {profile}"
@@ -81,8 +87,13 @@ def apply_groups(profile: str):
             choices=extensions_to_install,
         )
         if to_install:
-            for ext in extensions_to_install:
-                install_vscode_extension(profile, ext)
+            with Progress() as progress:
+                task = progress.add_task(
+                    "[green]Installing extensions...", total=len(extensions_to_install)
+                )
+                for ext in extensions_to_install:
+                    install_vscode_extension(profile, ext)
+                    progress.update(task, advance=1)
             actions += 1
             console.print(
                 f"Installed {len(extensions_to_install)} extensions in {profile}"
