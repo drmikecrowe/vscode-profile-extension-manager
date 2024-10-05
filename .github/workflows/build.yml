@@ -3,6 +3,8 @@ name: Build Executables
 on:
   push:
     branches: [main]
+    tags:
+      - 'v*'
   pull_request:
     branches: [main]
 
@@ -59,3 +61,39 @@ jobs:
           spec: 'src/vpem.spec'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'vpem-linux-x64'
+
+  create-release:
+    needs:
+      [
+        pyinstaller-build-windows,
+        pyinstaller-build-macos-x86,
+        pyinstaller-build-macos-arm,
+        pyinstaller-build-linux,
+      ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: artifacts
+
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./artifacts/vpem-windows/vpem-windows.exe
+          asset_name: vpem-windows.exe
+          asset_content_type: application/octet-stream
