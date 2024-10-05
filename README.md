@@ -6,6 +6,8 @@ VS Code Profile Extension Manager (VPEM) is a powerful command-line tool designe
 
 This project has been developed strictly on Linux, though it should work everywhere.  If you find an issue, please report it in the [GitHub issue tracker](https://github.com/drmikecrowe/vscode-profile-extension-manager/issues).
 
+Executables are built using [pyinstaller](https://github.com/pyinstaller/pyinstaller) and are available for Linux, Windows and MacOS.  Again, if any issues are found, please report them in the [GitHub issue tracker](https://github.com/drmikecrowe/vscode-profile-extension-manager/issues).
+
 ## Why?
 
 I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
