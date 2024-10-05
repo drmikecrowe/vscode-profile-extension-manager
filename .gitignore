@@ -16,9 +16,9 @@ devenv.local.nix
 
 # pre-commit
 .pre-commit-config.yaml
-.wip
 __pycache__
 .envrc
 build
 dist
 vscode_profile_extension_manager.egg-info/
+.ropeproject

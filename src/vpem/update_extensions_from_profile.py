@@ -9,13 +9,11 @@ from .vscode.list_installed_vscode_extensions import (
 )
 from .result_with_err import ResultWithErr, OK, ERR
 from rich.progress import Progress
+from . import CONFIG_DIR
 
 
 def update_extensions_from_profile(profile: str) -> ResultWithErr[None]:
     import json
-
-    if not os.path.exists(".wip"):
-        os.mkdir(".wip")
 
     def add_profile(profile: str, current: dict):
         current.setdefault("profiles", []).append(profile)
@@ -24,7 +22,7 @@ def update_extensions_from_profile(profile: str) -> ResultWithErr[None]:
     all = load_all_extension_details()
 
     print(f"Processing profile: {profile}")
-    raw_profile_exts = f".wip/vscode-extensions-{profile}.json"
+    raw_profile_exts = os.path.join(CONFIG_DIR, f"vscode-extensions-{profile}.json")
     extensions, err = list_installed_vscode_extensions(profile)
     if err:
         return ERR(err)
