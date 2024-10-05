@@ -13,6 +13,7 @@ jobs:
       - name: Create Windows Executable
         uses: sayyid5416/pyinstaller@v1
         with:
+          path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
           spec: 'vpem.spec'
@@ -25,6 +26,7 @@ jobs:
       - name: Create macOS x86 Executable
         uses: sayyid5416/pyinstaller@v1
         with:
+          path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
           spec: 'vpem.spec'
@@ -37,6 +39,7 @@ jobs:
       - name: Create macOS ARM Executable
         uses: sayyid5416/pyinstaller@v1
         with:
+          path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
           spec: 'vpem.spec'
@@ -50,6 +53,7 @@ jobs:
       - name: Create Linux x64 Executable
         uses: sayyid5416/pyinstaller@v1
         with:
+          path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
           spec: 'vpem.spec'
