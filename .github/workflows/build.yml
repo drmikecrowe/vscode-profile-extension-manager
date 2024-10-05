@@ -16,7 +16,7 @@ jobs:
           path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
-          spec: 'vpem.spec'
+          spec: 'src/vpem.spec'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'vpem-windows'
 
@@ -29,7 +29,7 @@ jobs:
           path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
-          spec: 'vpem.spec'
+          spec: 'src/vpem.spec'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'vpem-macos-x86'
 
@@ -42,7 +42,7 @@ jobs:
           path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
-          spec: 'vpem.spec'
+          spec: 'src/vpem.spec'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'vpem-macos-arm'
           options: --target-arch arm64
@@ -56,6 +56,6 @@ jobs:
           path: src
           python_ver: '3.10'
           pyinstaller_ver: '==5.13.2'
-          spec: 'vpem.spec'
+          spec: 'src/vpem.spec'
           requirements: 'requirements.txt'
           upload_exe_with_name: 'vpem-linux-x64'
