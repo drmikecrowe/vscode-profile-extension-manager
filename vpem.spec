@@ -12,7 +12,6 @@ a = Analysis(
     datas=datas,
     hiddenimports=['vpem', 'inquirer', 'rich', 'rich.progress', 'rich.prompt', 'rich.console', 'click', 'prodict', 'requests', 'appdirs'],
     hookspath=[],
-    hooksconfig={},
     runtime_hooks=[],
     excludes=[],
     noarchive=False,
