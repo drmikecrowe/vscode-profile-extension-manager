@@ -1,11 +1,11 @@
 --force
 --input-type dir
---name vpem
+--name vscode-profile-extension-manager
 --license apache-2.0
 --architecture all
---description "test description"
---url "https://github.com/JPHutchins/python-distribution-example"
---maintainer "JP Hutchins <jphutchins@gmail.com>"
+--description "Effortlessly manage your vscode extensions in each profile"
+--url "https://github.com/drmikecrowe/vscode-profile-extension-manager"
+--maintainer "Mike Crowe <drmikecrowe@gmail.com>"
 --after-install "after-install.sh"
 --after-remove "after-remove.sh"
 

@@ -15,7 +15,8 @@ from typing import Final, NamedTuple
 
 import pyinstaller_versionfile  # type: ignore
 
-APP_NAME: Final = "vpem"
+APP_NAME: Final = "vscode_profile_extensions_manager"
+MODULE_NAME: Final = "vpem"
 
 VERSION: Final = version(APP_NAME)
 APP_NAME_FULL: Final = (
@@ -87,7 +88,7 @@ def make_portable() -> Exception | BuildMetadata:
             f"--name={APP_NAME}",
             f"--distpath={DIST}",
             f"--workpath={REPO_ROOT}/build",
-            f"{REPO_ROOT}/{APP_NAME}/__main__.py",
+            f"{REPO_ROOT}/{MODULE_NAME}/__main__.py",
             "--hidden-import=inquirer",
             "--hidden-import=rich",
             "--hidden-import=rich.progress",
@@ -104,7 +105,16 @@ def make_portable() -> Exception | BuildMetadata:
         )
 
         # build the executable
-        assert subprocess.run(pyinstaller_command).returncode == 0
+        result = subprocess.run(pyinstaller_command, capture_output=True, text=True)
+        if result.returncode != 0:
+            import rich
+
+            rich.print(
+                f"[bold red]Error:[/bold red] PyInstaller command failed with return code {result.returncode}"
+            )
+            rich.print(f"[bold yellow]Standard Output:[/bold yellow]\n{result.stdout}")
+            rich.print(f"[bold yellow]Standard Error:[/bold yellow]\n{result.stderr}")
+            raise SystemExit(1)
 
         # test the executable
         assert (

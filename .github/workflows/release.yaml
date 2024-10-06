@@ -1,7 +1,7 @@
 name: Release
 
 env:
-  name: vpem
+  name: vscode-profile-extension-manager
 
 on:
   release:
