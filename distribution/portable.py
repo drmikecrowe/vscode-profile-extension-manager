@@ -89,6 +89,7 @@ def make_portable() -> Exception | BuildMetadata:
             f"--distpath={DIST}",
             f"--workpath={REPO_ROOT}/build",
             f"{REPO_ROOT}/{MODULE_NAME}/__main__.py",
+            "--hidden-import=vpem",
             "--hidden-import=inquirer",
             "--hidden-import=rich",
             "--hidden-import=rich.progress",
