@@ -1,7 +1,7 @@
 name: Release
 
 env:
-  name: vscode-profile-extension-manager
+  name: vscode_profile_extension_manager
 
 on:
   release:

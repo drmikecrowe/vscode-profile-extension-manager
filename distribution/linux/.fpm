@@ -1,6 +1,6 @@
 --force
 --input-type dir
---name vscode-profile-extension-manager
+--name vscode_profile_extension_manager
 --license apache-2.0
 --architecture all
 --description "Effortlessly manage your vscode extensions in each profile"
