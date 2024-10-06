@@ -1,5 +1,8 @@
-#!/usr/bin/env python
-import sys
+# Copyright (c) 2024 JP Hutchins
+# SPDX-License-Identifier: Apache-2.0
+
+"""The application entry point."""
+
 import click
 import rich
 
@@ -8,15 +11,12 @@ from vpem.categorize_extensions import categorize_extensions
 from vpem.update_extensions_from_profile import update_extensions_from_profile
 
 
-cmd = sys.argv[0]
-
-
 @click.group()
-def cli():
+def app():
     pass
 
 
-@cli.command(
+@app.command(
     help="Extract extensions from VS Code profiles. Default profile always dumped. Add other profiles to the list."
 )
 @click.argument("profiles", nargs=-1)
@@ -33,12 +33,12 @@ def dump(profiles):
     rich.print(
         f"""
 Now, categorize your apps:
-$ {cmd} categorize
+$ vpem categorize
                """
     )
 
 
-@cli.command(help="Loop thru extensions categorizing them into groups")
+@app.command(help="Loop thru extensions categorizing them into groups")
 @click.option(
     "--all",
     "-a",
@@ -51,13 +51,13 @@ def categorize(all):
     rich.print(
         f"""
 Now, initialize each profile separately by doing:
-$ {cmd} apply Default
-$ {cmd} apply Example                                             
+$ vpem apply Default
+$ vpem apply Example                                             
                """
     )
 
 
-@cli.command(help="Select groups defining your needs and apply to the VSCode profile")
+@app.command(help="Select groups defining your needs and apply to the VSCode profile")
 @click.argument("profile", required=True)
 def apply(profile):
     if not profile:
@@ -66,4 +66,4 @@ def apply(profile):
 
 
 if __name__ == "__main__":
-    cli()
+    app()

@@ -1,0 +1,12 @@
+--force
+--input-type dir
+--name vpem
+--license apache-2.0
+--architecture all
+--description "test description"
+--url "https://github.com/JPHutchins/python-distribution-example"
+--maintainer "JP Hutchins <jphutchins@gmail.com>"
+--after-install "after-install.sh"
+--after-remove "after-remove.sh"
+
+../../dist/vpem=/usr/share/

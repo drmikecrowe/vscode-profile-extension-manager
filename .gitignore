@@ -1,24 +1,16 @@
-# Devenv
-.devenv*
-devenv.local.nix
-
-# direnv
-.direnv
-
-# pre-commit
-.pre-commit-config.yaml
-# Devenv
-.devenv*
-devenv.local.nix
-
-# direnv
-.direnv
-
-# pre-commit
-.pre-commit-config.yaml
+.venv
 __pycache__
-.envrc
-build
+.coverage
+.mypy_cache
+.pytest_cache
 dist
-vscode_profile_extension_manager.egg-info/
-.ropeproject
+build
+*.spec
+.gem
+*.egg-info
+
+# VSCode
+# Generally I inlcude the .vscode folder, but this repo is meant to be as
+# simple as possible, so I'm excluding it.  You can find the configuration
+# in the git history if you're interested.
+.vscode

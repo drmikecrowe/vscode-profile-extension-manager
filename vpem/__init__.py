@@ -1,3 +1,6 @@
+# Copyright (c) 2024 JP Hutchins
+# SPDX-License-Identifier: Apache-2.0
+
 from appdirs import user_config_dir
 import os
 
