@@ -2,26 +2,24 @@
 # SPDX-License-Identifier: Apache-2.0
 
 [build-system]
-requires = [
-    "setuptools>=70.0",
-]
+requires = ["setuptools>=70.0"]
 build-backend = "setuptools.build_meta"
+
 [project]
-name = "vpem"
+name = "vscode-profile-extension-manager"
 dynamic = ["version"]
 description = "Effortlessly manage your vscode extenstions in each profile"
 authors = [
-    { name = "Mike Crowe", email = "drmikecrowe@gmail.com" },
+    {name = "Mike Crowe", email = "drmikecrowe@gmail.com"},
 ]
 readme = "README.md"
-license = { file = "LICENSE" }
+license = {file = "LICENSE"}
 requires-python = ">=3.11,<3.14"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Topic :: Software Development :: Build Tools",
 ]
-
 dependencies = [
     "rich>=13.8.1",
     "textual>=0.81.0",
@@ -35,6 +33,7 @@ dependencies = [
 
 [tool.setuptools.dynamic]
 version = {attr = "vpem.__version__"}
+
 [project.optional-dependencies]
 dev = [
     "build>=1.2.1,<2",
