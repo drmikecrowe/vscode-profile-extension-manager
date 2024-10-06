@@ -49,5 +49,5 @@ Homepage = "https://github.com/drmikecrowe/vscode-profile-extension-manager"
 Repository = "https://github.com/drmikecrowe/vscode-profile-extension-manager.git"
 
 [tool.setuptools]
-packages = ["vpem"]
+packages = ["vpem", "vpem.vscode"]
 include-package-data = true
