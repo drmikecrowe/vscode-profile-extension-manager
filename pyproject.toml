@@ -6,7 +6,7 @@ requires = ["setuptools>=70.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vscode-profile-extensions-manager"
+name = "vscode_profile_extensions_manager"
 dynamic = ["version"]
 description = "Effortlessly manage your vscode extenstions in each profile"
 authors = [
