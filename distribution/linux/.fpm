@@ -9,4 +9,4 @@
 --after-install "after-install.sh"
 --after-remove "after-remove.sh"
 
-../../dist/vscode_profile_extensions_manager=/usr/share/
+../../dist/vscode_profile_extension_manager=/usr/share/

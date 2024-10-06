@@ -11,4 +11,4 @@ if not os.path.exists(CONFIG_DIR):
 ALL_EXTENSION_DETAILS = os.path.join(CONFIG_DIR, "vscode-extensions-with-desc.json")
 EXTENSION_GROUPS = os.path.join(CONFIG_DIR, "vscode-extensions-groups.json")
 
-__version__ = '0.1.6'
+__version__ = '0.1.7'

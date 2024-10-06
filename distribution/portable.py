@@ -15,7 +15,7 @@ from typing import Final, NamedTuple
 
 import pyinstaller_versionfile  # type: ignore
 
-APP_NAME: Final = "vscode_profile_extensions_manager"
+APP_NAME: Final = "vscode_profile_extension_manager"
 MODULE_NAME: Final = "vpem"
 
 VERSION: Final = version(APP_NAME)
