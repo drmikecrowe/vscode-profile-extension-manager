@@ -6,10 +6,9 @@ requires = [
     "setuptools>=70.0",
 ]
 build-backend = "setuptools.build_meta"
-
 [project]
 name = "vpem"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Effortlessly manage your vscode extenstions in each profile"
 authors = [
     { name = "Mike Crowe", email = "drmikecrowe@gmail.com" },
@@ -34,6 +33,8 @@ dependencies = [
     "appdirs>=1.4.4",
 ]
 
+[tool.setuptools.dynamic]
+version = {attr = "vpem.__version__"}
 [project.optional-dependencies]
 dev = [
     "build>=1.2.1,<2",

@@ -54,8 +54,8 @@ def make_portable() -> Exception | BuildMetadata:
         shutil.unpack_archive(archives[0], DIST)
 
         build_metadata: Final = BuildMetadata(
-            company_name="My Example Company",
-            product_name="My Example Application",
+            company_name="Mike Crowe",
+            product_name="VS Code Profile Extension Manager",
             version=VERSION,
             portable_path=str(DIST_PATH),
         )
@@ -69,11 +69,11 @@ def make_portable() -> Exception | BuildMetadata:
             output_file=REPO_ROOT / "build" / "exe_version.txt",
             version=VERSION,
             company_name=build_metadata.company_name,
-            file_description="An example app packed with PyInstaller + WiX",
+            file_description="Effortlessly manage your vscode extensions in each profile",
             product_name=build_metadata.product_name,
             internal_name=APP_NAME,
             original_filename=EXE_NAME,
-            legal_copyright="Copyright (c) Myself and Contributors",
+            legal_copyright="Copyright (c) 2024 Mike Crowe",
             translations=(1033, 1252),
         )
 
@@ -81,12 +81,22 @@ def make_portable() -> Exception | BuildMetadata:
             "pyinstaller",
             f"--add-data={DIST}/{APP_NAME}-{VERSION}:{APP_NAME}",
             f"--copy-metadata={APP_NAME}",
+            f"--copy-metadata=readchar",
             "--noconfirm",
             "--contents-directory=src",
             f"--name={APP_NAME}",
             f"--distpath={DIST}",
             f"--workpath={REPO_ROOT}/build",
             f"{REPO_ROOT}/{APP_NAME}/__main__.py",
+            "--hidden-import=inquirer",
+            "--hidden-import=rich",
+            "--hidden-import=rich.progress",
+            "--hidden-import=rich.prompt",
+            "--hidden-import=rich.console",
+            "--hidden-import=click",
+            "--hidden-import=prodict",
+            "--hidden-import=requests",
+            "--hidden-import=appdirs",
         ) + (
             (f"--version-file={REPO_ROOT}/build/exe_version.txt",)
             if platform.system() == "Windows"
@@ -98,18 +108,19 @@ def make_portable() -> Exception | BuildMetadata:
 
         # test the executable
         assert (
-            "Hello, World!"
+            "Usage:"
             in subprocess.run(
                 [f"{DIST}/{APP_NAME}/{EXE_NAME}"], capture_output=True
             ).stdout.decode()
         )
+        from vpem import __version__
+
         assert (
-            VERSION
+            __version__
             in subprocess.run(
-                [f"{DIST}/{APP_NAME}/{EXE_NAME}", "-v"], capture_output=True
+                [f"{DIST}/{APP_NAME}/{EXE_NAME}", "--version"], capture_output=True
             ).stdout.decode()
         )
-
         # copy the build to the staging folder
         shutil.copytree(Path(DIST, APP_NAME), DIST_PATH, dirs_exist_ok=True)
 

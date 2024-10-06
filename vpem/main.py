@@ -5,6 +5,7 @@
 
 import click
 import rich
+from importlib.metadata import version
 
 from vpem.apply_groups import apply_groups
 from vpem.categorize_extensions import categorize_extensions
@@ -12,6 +13,7 @@ from vpem.update_extensions_from_profile import update_extensions_from_profile
 
 
 @click.group()
+@click.version_option(version=version("vpem"), message="%(version)s")
 def app():
     pass
 
