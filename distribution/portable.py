@@ -80,7 +80,7 @@ def make_portable() -> Exception | BuildMetadata:
 
         pyinstaller_command: Final = (
             "pyinstaller",
-            f"--add-data={DIST}/{APP_NAME}-{VERSION}:{APP_NAME}",
+            f"--add-data={DIST}/{APP_NAME}-{VERSION}:{MODULE_NAME}",
             f"--copy-metadata={APP_NAME}",
             f"--copy-metadata=readchar",
             "--noconfirm",
