@@ -8,6 +8,12 @@ This project has been developed strictly on Linux, though it should work everywh
 
 Executables are built using [pyinstaller](https://github.com/pyinstaller/pyinstaller) and are available for Linux, Windows and MacOS.  Again, if any issues are found, please report them in the [GitHub issue tracker](https://github.com/drmikecrowe/vscode-profile-extension-manager/issues).
 
+TODO:
+
+- [ ]  Credit [Paolo-Beci/pyinstaller-all-os-gh-action](https://github.com/Paolo-Beci/pyinstaller-all-os-gh-action)
+- [ ]  Test builds on various systems
+- [ ]  Maybe migrate to Textual from the rich folks for a TUI
+
 ## Why?
 
 I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
@@ -16,28 +22,38 @@ I realized that multiple profiles might make more sense than tons of extensions 
 
 For example, here's how to apply a group of extensions to a profile:
 
-![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply-example.png)
+![Apply Extensions](/assets/images/2024/10/VPEM-apply-example.png)
 
 ## Process
 
 - First, dump your extensions for all your profiles
 
-![Dump Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-dump.gif)
+![Dump Extensions](/assets/images/2024/10/VPEM-dump.gif)
 
 - Next, categorizing extensions by searching for common strings and assign to categories
 
-![Categorize Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-categorize.gif)
+![Categorize Extensions](/assets/images/2024/10/VPEM-categorize.gif)
 
 - Finally, apply extensions to a profile
 
-![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply.gif)
+![Apply Extensions](/assets/images/2024/10/VPEM-apply.gif)
 
 ## Installation
 
 To install VPEM, you can use pip:
 
+**Recommended way:**
+
 ```sh
-TBD
+pipx install pipx install vscode_profile_extension_manager
+```
+
+Alternatively, you may download the released binaries in the repo.  However, these are mass-produced by actions I've pulled from various places, so I can't guarantee they're tested.
+
+Finally, you can also use [jpillora/installer](https://github.com/jpillora/installer) to automate the installation:
+
+```sh
+curl -q https://i.jpillora.com/drmikecrowe/vscode-profile-extension-manager! | sh
 ```
 
 ## Usage
@@ -47,19 +63,19 @@ Here are some basic usage examples:
 - Dump extensions from a profile:
 
 ```sh
-   poetry run vpem.py dump --profile "Default"
+   vpem dump --profile "Default"
 ```
 
 - Apply extensions to a profile:
 
 ```sh
-   poetry run vpem.py apply --profile "Work" --category "Python Development"
+   vpem apply --profile "Work" --category "Python Development"
 ```
 
 - List all categories:
 
 ```sh
-   poetry run vpem.py list-categories
+   vpem list-categories
 ```
 
 ## Contributing
