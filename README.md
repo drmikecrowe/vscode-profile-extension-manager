@@ -16,7 +16,7 @@ TODO:
 
 ## Why?
 
-I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
+I tend to use a lot of extensions.  Further, I find myself switching frequently between TypeScript, Python, and now C#.  Sometimes I work in Azure.  Other times in AWS.
 
 I realized that multiple profiles might make more sense than tons of extensions in a single profile.  However, it's also really easy to experiment with extensions and leave unused ones polluting the profile.  This tool helps me keep things organized.
 
