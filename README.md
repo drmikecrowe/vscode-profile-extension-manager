@@ -22,21 +22,21 @@ I realized that multiple profiles might make more sense than tons of extensions 
 
 For example, here's how to apply a group of extensions to a profile:
 
-![Apply Extensions](/assets/images/2024/10/VPEM-apply-example.png)
+![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply-example.png)
 
 ## Process
 
 - First, dump your extensions for all your profiles
 
-![Dump Extensions](/assets/images/2024/10/VPEM-dump.gif)
+![Dump Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-dump.gif)
 
 - Next, categorizing extensions by searching for common strings and assign to categories
 
-![Categorize Extensions](/assets/images/2024/10/VPEM-categorize.gif)
+![Categorize Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-categorize.gif)
 
 - Finally, apply extensions to a profile
 
-![Apply Extensions](/assets/images/2024/10/VPEM-apply.gif)
+![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply.gif)
 
 ## Installation
 
